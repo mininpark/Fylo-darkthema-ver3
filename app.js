@@ -2,11 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const server = app.listen(process.env.PORT || 3000, ()=> {
-    const port = server.address().port;
-    console.log('Server is working on port {}'),
-});
-
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.get('', (req, res, next) => {
@@ -16,5 +11,5 @@ app.get('', (req, res, next) => {
 
 const server = app.listen(process.env.PORT || 3000, ()=> {
     const port = server.address().port;
-    console.log('Server is working on port {}'),
+    console.log('Server is working on port {}');
 });
