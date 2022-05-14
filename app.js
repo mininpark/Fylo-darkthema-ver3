@@ -11,14 +11,12 @@ MongoClient.connect('mongodb+srv://admin:admin@cluster0.tpwst.mongodb.net/myFirs
         const db = client.db('fylo-database')
         const fyloCollection = db.collection('fylo')
 
-            app.set('view engine', 'ejs')
-
             //Middlewares and other routes
             app.use(bodyParser.urlencoded({ extended:true }))
             app.use(express.static(path.join(__dirname, 'public')))
 
             app.get('/', (req, res, next) => {
-                res.sendFile(__dirname + '/index.html')
+                res.sendFile(__dirname + '/public/index.html')
                 db.collection('fylo').find().toArray()
                     .then(results => {
                         console.log(results)
