@@ -1,9 +1,11 @@
 {
   "name": "fylo-dark-theme-landing-page-master-ver2",
   "version": "1.0.0",
-  "description": "Users should be able to:",
+  "description": "Your security service",
   "main": "app.js",
+  "engines": {"node": "16.15.0"},
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
