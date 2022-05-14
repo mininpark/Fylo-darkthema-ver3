@@ -80,14 +80,11 @@ The designs were created to the following widths:
 .hidden {display: none;}
 
 /*navbar*/
-.fixed-top a{
-    color:#fff;
-}
+
 .fixed-top.scrolled {
-    background-color: #fff !important;
+    background-color: var(--accent-cyan-color) !important;
 }
-.fixed-top.scrolled a {
-    color: #000;
+.fixed-top.navbar-dark.scrolled .nav-link {
     font-weight: 600;
 }
 

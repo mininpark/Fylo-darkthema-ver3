@@ -13,7 +13,7 @@
 </head>
 <body>
   <!--navbar-->
-  <nav class="navbar navbar-expand-sm fixed-top mb-2">
+  <nav class="navbar navbar-expand-sm fixed-top mb-2 navbar-dark">
     <div class="container">
       <a class="logo navbar-brand" href="#">Fylo<h1 class="hidden">Fylo</h1></a>
       
@@ -210,8 +210,8 @@
       <div class="p-5 card align-items-center mx-auto">
         <h3 class="mb-3 fs-2 text-center">Get early access today</h3>
         <p class="mb-3 text-center">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-        <form action="#" class="news-input d-flex flex-column flex-md-row" method="get">
-          <input type="email" type="text" class="form-control" placeholder="example@example.com" required>
+        <form action="/sent" class="news-input d-flex flex-column flex-md-row" method="POST">
+          <input type="email" type="text" class="form-control" placeholder="example@example.com" name="email" required>
           <input type="submit" class="btn" value="Get Started For Free">
         </form>
       </div>
@@ -256,25 +256,26 @@
       </div>
       <div class="modal-body">
         <p class="lead">Thank you for your Interest! Please fill out this form. We will contact you very soon.</p>
-        <form action="">
+        <form action="/sent" method="POST">
           <div class="mb-3">
             <label for="first-name" class="col-form-label">First Name:</label>
-            <input class="form-control" id="first-name" type="text"/>  
+            <input class="form-control" id="first-name" type="text" name="firstname" required/>  
           </div>
           <div class="mb-3">
             <label for="last-name" class="col-form-label">Last Name:</label>
-            <input class="form-control" id="last-name" type="text"/>
+            <input class="form-control" id="last-name" type="text" name="lastname" required/>
           </div>
           <div class="mb-3">
             <label for="email" class="col-form-label">Email:</label>
-            <input class="form-control" id="email" type="email"/>
+            <input class="form-control" id="email" type="email" name="email" required/>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <input type="submit" value="Submit" class="btn btn-primary">
           </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
-      </div>
+
     </div>
   </div>
 </div>
