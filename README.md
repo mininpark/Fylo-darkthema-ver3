@@ -4,7 +4,7 @@ This is the downgraded version from Fylo Website Version 2 due to hosting proble
 
 ### Links
 
-###Live URL : https://mininpark.github.io/Ver3-Fylo-Darkthema/
+Live URL : https://mininpark.github.io/Ver3-Fylo-Darkthema/
 
 # My process
 
@@ -16,6 +16,10 @@ This is the downgraded version from Fylo Website Version 2 due to hosting proble
 - Responsive Web - with Mobile Device
 - (Downgraded from Ver. 2) Delete NodeJS, Express, MongoDB
     - This version 3 is only for deploying the website in a static way without server problems. If you want to see **how it works locally with NodeJS, Express, and MongoDB, please go to Version 2**: [https://github.com/mininpark/Ver2_Fylo_darktheme](https://github.com/mininpark/Ver2_Fylo_darktheme)
+
+Version 2: https://github.com/mininpark/Ver2_Fylo_darktheme
+
+Version 3: https://github.com/mininpark/Ver3-Fylo-Darkthema
 
 ## ****What I learned****
 
@@ -51,7 +55,7 @@ If you want to see the previous version locally with NodeJS, Express, and MongoD
 
 ### Mapbox API
 
-- Learned to allow to programmatically access Mapbox tools and services
+- Learned to allow to programmatically access Mapbox tools and services and sizing the API Tools into the div
 
 ### Responsive Web
 
@@ -67,9 +71,9 @@ $(function () {
   });
 ```
 
-To solve the hosting problems, I searched a lot of reasonable options by supporting NodsJS, because most free hosting providers don’t provide an option with NodeJS and MongoDB. In this process, I learned Backend options and Linux control. 
+To solve the hosting problems, I searched a lot of reasonable options which are supporting NodsJS, because most free hosting providers don’t provide an option with NodeJS and MongoDB. In this process, I learned a lot of Backend options and a littel knowledge about Linux and Bash. 
 
-Considering all backend options, It seems like Amazon AWS Cloud is a proper hosting provider, so It took a lot to learn the basics and settings of Amazon AWS such as Inbound, Outbound, Securiy Gorup, and etc., but after setting AWS Cloud, memory of Linux seems like an error to run the AWS. 
+Considering all backend options, Amozon AWS Cloud seems like a proper hosting provider, so It took a lot to learn the basics and settings of Amazon AWS such as Inbound, Outbound, Securiy Gorup, and etc., but after setting AWS Cloud, memory of Linux seems like an error to run the AWS. 
 
 ### What I learned
 
